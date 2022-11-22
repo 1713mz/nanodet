@@ -5,7 +5,7 @@
 #           AP_small = 0.083
 #               AP_m = 0.278
 #               AP_l = 0.451
-save_dir: workspace/nanodet-plus-m_320
+save_dir: /content/drive/MyDrive/workspace/owndata/ELG4960_Out/2/nanodet-plus-m_test
 model:
   weight_averager:
     name: ExpMovingAverager
@@ -63,8 +63,8 @@ model:
 data:
   train:
     name: CocoDataset
-    img_path: D:/Datasets/211102/data/
-    ann_path: D:/Datasets/211102/data/_annotations.json
+    img_path: /content/drive/MyDrive/Synt data test/211102/data/
+    ann_path: /content/drive/MyDrive/Synt data test/211102/data/_annotations.json
     input_size: [1024,72] #[w,h]
     keep_ratio: False
     pipeline:
@@ -81,8 +81,8 @@ data:
       normalize: [[103.53, 116.28, 123.675], [57.375, 57.12, 58.395]]
   val:
     name: CocoDataset
-    img_path: D:/Datasets/211102_1/data/
-    ann_path: D:/Datasets/211102_1/data/_annotations.json
+    img_path: /content/drive/MyDrive/Synt data test/211102_1/data/
+    ann_path: /content/drive/MyDrive/Synt data test/211102_1/data/_annotations.json
     input_size: [1024,72] #[w,h]
     keep_ratio: False
     pipeline:
